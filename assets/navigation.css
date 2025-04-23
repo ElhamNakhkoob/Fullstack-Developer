@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links li:hover {
+  background-color: salmon;
+  color: black;
+}
+
+.gallery-container {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.gallery {
+  margin: 1.5rem;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  border-radius: 5%;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
